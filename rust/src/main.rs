@@ -1,5 +1,6 @@
-fn prob(v: &Vec<i64>) -> i64 {
-    return v.iter().sum::<i64>() / i64::try_from(v.len()).unwrap();
+fn prob(v: &[i64]) -> i64 {
+    let sum: i64 = v.iter().sum();
+    sum / v.len() as i64
 }
 
 fn main() {
